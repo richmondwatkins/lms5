@@ -7,6 +7,9 @@
 
   function init(){
     $('#logout').click(logout);
+
+
+
   }
 
   function logout(){

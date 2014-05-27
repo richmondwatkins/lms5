@@ -192,6 +192,70 @@ a.index-link:hover {
   }
 }
 
+.ui-accordion-header {
+  background-color: @main-color;
+  text-align: center;
+
+}
+// #ui-accordion-accordion-header-0 {
+//   background-color: @main-color;
+//   text-align: center;
+// }
+
+
+
+#nav {
+  display:inline-block;
+  float:left;
+
+  ul {
+    list-style-type:none;
+    margin:15px 0 0 15px;
+    padding:0;
+
+    li {
+      display:inline-block;
+      margin-right:10px;
+      padding: 10px;
+
+      a {
+        text-decoration:none;
+        color: #555;
+      }
+
+      a:hover {
+        color:@main-color;
+  }
+}
+}
+}
+
+
+img.logo {
+  display:inline-block;
+  float:left;
+  width: 170px;
+  height: auto;
+}
+
+#users {
+  float:right;
+  padding-top: 10px;
+  position: relative;
+  top: -10px;
+  left: -50px;
+
+}
+#logouts {
+    display:inline-block;
+    float:right;
+    padding-top: 15px;
+    margin-left: 5px;
+    position: relative;
+
+    left: -50px;
+  }
+
 header {
   width: 100%;
   margin: 0;
@@ -684,7 +748,55 @@ div.radio {
 }
 
 
+a#taketest {
+  display: block;
+  width: 300px;
+  background-color: @main-color;
+  padding: 15px 0;
+  color:#fff;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 
+a#taketest:hover {
+  background-color: @main-color;
+  border: 3px solid @main-color;
+  background-color: #333;
+
+}
+
+// .upload {
+//   height: 100px;
+//   width: 100px;
+// }
+
+.upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.upload::before {
+  content: url('/img/cameraIcon.png');
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.upload:hover::before {
+  border-color: black;
+}
+.upload:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
 
 /* Individual modal styles with animations/transitions */
 

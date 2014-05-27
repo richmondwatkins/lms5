@@ -8,12 +8,13 @@
   $(document).ready(init);
 
   function init(){
+    loadEditor();
     $('#lessons').hide();
     $('#addlesson').click(showLessonForm);
     $('#savelesson').click(saveLesson);
-    loadEditor();
-     $( '#accordion' ).accordion();
   }
+
+
 
   function showLessonForm(){
     $('#lessons').slideToggle();
